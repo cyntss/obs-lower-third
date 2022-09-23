@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Lower thirds Source</title>
-	<link rel="stylesheet" href="../common/css/style-source.css">
-	<script src="../common/js/jquery.js"></script>
+	<link rel="stylesheet" href="./common/css/style-source.css">
+	<script src="./common/js/jquery.js"></script>
 
  </head>
   <body class="browser-source lower-thirds">
@@ -524,7 +524,7 @@
 			if (alt_4_background_switch == "false"){
 				alt_4_style_color_1 = "none";
 				alt_4_style_color_2 = "none";
-			}			
+			}
 
 			alt_4_line_spacing = alt_4_line_spacing * 0.1;
 			alt_4_border_thickness_amount = alt_4_border_thickness_amount * 0.1;
@@ -533,7 +533,7 @@
 				alt_4_style_color_3 = "none";
 				alt_4_style_color_4 = "none";
 				alt_4_border_thickness_amount = 0;
-			}			
+			}
 
 			alt_4_animation_time = Number(received_data.alt_4_animation_time || global_animation_time);
 			alt_4_active_time = Number(received_data.alt_4_active_time || activeTime);
@@ -830,7 +830,7 @@
 			root.style.setProperty('--alt-2-logo-size', alt_2_logo_size + "em");
 			root.style.setProperty('--alt-2-corners', alt_2_corners + "em");
 			root.style.setProperty('--alt-2-border-switch', alt_2_border_switch);
-			root.style.setProperty('--alt-2-border_thickness_amount', alt_2_border_thickness_amount + "rem");			
+			root.style.setProperty('--alt-2-border_thickness_amount', alt_2_border_thickness_amount + "rem");
 
 			root.style.setProperty('--alt-3-size', alt_3_size + "px");
 			root.style.setProperty('--alt-3-margin-h', alt_3_margin_h + "rem");
@@ -869,12 +869,12 @@
 			root.style.setProperty('--alt-4-style-color-1', alt_4_style_color_1);
 			root.style.setProperty('--alt-4-style-color-2', alt_4_style_color_2);
 			root.style.setProperty('--alt-4-style-color-3', alt_3_style_color_3);
-			root.style.setProperty('--alt-4-style-color-4', alt_3_style_color_4);			
+			root.style.setProperty('--alt-4-style-color-4', alt_3_style_color_4);
 			root.style.setProperty('--alt-4-font', alt_4_font);
 			root.style.setProperty('--alt-4-logo-size', alt_4_logo_size + "em");
 			root.style.setProperty('--alt-4-corners', alt_4_corners + "em");
 			root.style.setProperty('--alt-4-border-switch', alt_4_border_switch);
-			root.style.setProperty('--alt-4-border_thickness_amount', alt_4_border_thickness_amount + "rem");			
+			root.style.setProperty('--alt-4-border_thickness_amount', alt_4_border_thickness_amount + "rem");
 
 
 			//Hide the background shadow if color is transparent (end with ",0)")
@@ -910,7 +910,7 @@
 					root.style.setProperty('--alt-1-shadows-graph', "none");
 				} else {
 					root.style.setProperty('--alt-1-shadows-graph', "0.1rem 0.1rem 0.2rem rgba(0,0,0," + alt_1_shadow_amount + ")");
-				} 
+				}
 			}
 
 			if (alt_2_shadows == "false") {
@@ -923,7 +923,7 @@
 					root.style.setProperty('--alt-2-shadows-graph', "none");
 				} else {
 					root.style.setProperty('--alt-2-shadows-graph', "0.1rem 0.1rem 0.2rem rgba(0,0,0," + alt_2_shadow_amount + ")");
-				} 
+				}
 			}
 
 			if (alt_3_shadows == "false") {
@@ -936,9 +936,9 @@
 					root.style.setProperty('--alt-3-shadows-graph', "none");
 				} else {
 					root.style.setProperty('--alt-3-shadows-graph', "0.1rem 0.1rem 0.2rem rgba(0,0,0," + alt_3_shadow_amount + ")");
-				} 
+				}
 			}
-			
+
 			if (alt_4_shadows == "false") {
 				root.style.setProperty('--alt-4-shadows', "none");
 				root.style.setProperty('--alt-4-shadows-graph', "none");
@@ -949,7 +949,7 @@
 					root.style.setProperty('--alt-4-shadows-graph', "none");
 				} else {
 					root.style.setProperty('--alt-4-shadows-graph', "0.1rem 0.1rem 0.2rem rgba(0,0,0," + alt_4_shadow_amount + ")");
-				} 
+				}
 			}
 		}
 
