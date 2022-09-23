@@ -7,12 +7,12 @@
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<title>Lower Thirds Control Panel</title>
-		<link rel="stylesheet" href="/common/css/style-control_panel.css">
-		<link rel="stylesheet" href="/common/css/cp-icons.css">
-		<script src="/common/js/jquery.js"></script>
-		<script src="/common/js/jscolor.js"></script>
-		<script src="/common/js/hotkeys.js"></script>
-		<script src="/common/js/jquery-ui.js"></script>
+		<link rel="stylesheet" href="./common/css/style-control_panel.css">
+		<link rel="stylesheet" href="./common/css/cp-icons.css">
+		<script src="./common/js/jquery.js"></script>
+		<script src="./common/js/jscolor.js"></script>
+		<script src="./common/js/hotkeys.js"></script>
+		<script src="./common/js/jquery-ui.js"></script>
 	</head>
 	<body class="lower-thirds-panel panel">
 		<div id="alt-panel" class="static-panel-top" style="margin-bottom: 0px">
@@ -1420,14 +1420,14 @@
 
 			//Load the theme style
 			var theme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'dark';
-			$('head').append('<link rel="stylesheet" href="/common/css/themes/' + theme + '/theme.css"/>');
+			$('head').append('<link rel="stylesheet" href="./common/css/themes/' + theme + '/theme.css"/>');
 
 			function changeTheme(newTheme) {
-				$('link[href="/common/css/themes/' + theme + '/theme.css"]').remove();
+				$('link[href="./common/css/themes/' + theme + '/theme.css"]').remove();
 				var head= document.getElementsByTagName('head')[0];
 				var link= document.createElement('link');
 				link.rel= "stylesheet";
-				link.href= "/common/css/themes/" + newTheme + "/theme.css";
+				link.href= "./common/css/themes/" + newTheme + "/theme.css";
 				head.appendChild(link);
 				theme = newTheme;
 			}
@@ -1807,7 +1807,7 @@
 
 			//Reload the hotjeys.js file updated by the LUA script
 			function updateHotkeys() {
-			    src = '/common/js/hotkeys.js';
+			    src = './common/js/hotkeys.js';
 			    $('script[src="' + src + '"]').remove();
 			    var head= document.getElementsByTagName('head')[0];
 		    	var script= document.createElement('script');
